@@ -1,6 +1,5 @@
 import {ChangeEvent} from "react";
 import {AddItemForm} from "./AddItemForm";
-import {FilterValuesType, TaskType} from "./app/App";
 import {EditableSpan} from "./EditableSpan";
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -10,6 +9,8 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Box from "@mui/material/Box";
 import {filterButtonsContainerSx, getListItemSx} from "./Todolist.styles";
+import {TaskType} from "./model/tasks-reducer";
+import {FilterValuesType} from "./model/todolists-reducer";
 
 
 type PropsType = {
